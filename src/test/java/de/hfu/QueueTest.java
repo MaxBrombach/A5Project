@@ -25,8 +25,25 @@ public class QueueTest {
 	
 	@Test
 	public void testOverwrite() {
+		qu.enqueue(1);
+		qu.enqueue(2);
 		qu.enqueue(3);
-		int[] goal = {3,2,3};
+		qu.enqueue(5);
+		int[] goal = {1,2,5};
 		assertArrayEquals(goal, qu.queue);
 	}
+	
+	@Test(expected=IllegalStateException.class)
+	public void testDequeueEmpty() {
+		qu.dequeue();
+				
+	}
+	
+	@Test
+	public void testDequeue() {
+		qu.enqueue(1);
+		assertEquals(1,qu.dequeue());	
+		assertEquals(qu.head, 1);
+	}
+	
 }
