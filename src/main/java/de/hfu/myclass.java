@@ -1,7 +1,11 @@
 package de.hfu;
 
 import java.util.Scanner;
-
+/**
+ * 
+ * @author User
+ * 
+ */
 public class myclass {
 
 	public static void main(String[] args) {
