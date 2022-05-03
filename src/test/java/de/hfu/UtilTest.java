@@ -6,12 +6,17 @@ public class UtilTest {
 	
 	@Test
 	public void TestistErstesHalbjahr() {
-		assertTrue(Util.istErstesHalbjahr(3));
+		assertTrue(Util.istErstesHalbjahr(1));
 	}
 	
 	@Test
 	public void TestistnichtErstesHalbjahr() {
-		assertFalse(Util.istErstesHalbjahr(8));
+		assertFalse(Util.istErstesHalbjahr(12));
+	}
+	
+	@Test
+	public void TestistnichtErstesHalbjahrmid() {
+		assertFalse(Util.istErstesHalbjahr(7));
 	}
 	
 	@Test(expected=IllegalArgumentException.class)
