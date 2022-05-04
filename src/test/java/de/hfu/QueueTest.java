@@ -29,9 +29,9 @@ public class QueueTest {
 		qu.enqueue(2);
 		qu.enqueue(3);
 		qu.enqueue(5);
-		int[] goal = {5,2,3};
+		int[] goal = {1,2,5};
 		assertArrayEquals(goal, qu.queue);
-		assertEquals(qu.tail, 3);
+		assertEquals(qu.tail, 2);
 	}
 	
 	@Test(expected=IllegalStateException.class)

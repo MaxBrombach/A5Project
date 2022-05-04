@@ -15,7 +15,7 @@ public class Queue {
    }
 
    public void enqueue(int a){
-	   if((tail - head) <= maxqueuelength -1 ){
+	   if((tail - head) < maxqueuelength -1 ){
 		    tail++;
 		  }
 		  queue[tail % maxqueuelength] = a;
