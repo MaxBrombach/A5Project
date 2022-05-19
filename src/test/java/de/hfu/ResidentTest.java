@@ -62,7 +62,7 @@ public class ResidentTest extends TestCase {
 			service.getUniqueResident(perin1);
 			fail("Suchanfrage lieferte kein eindeutiges Ergebnis!");
 		} catch (ResidentServiceException e) {
-			// TODO Auto-generated catch block
+			
 			
 		}
 	}
